@@ -1,0 +1,19 @@
+const form = document.getElementById('loveLetterForm');
+const output = document.getElementById('letterOutput');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const to = document.getElementById('to').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!to || !message) {
+    output.textContent = 'Por favor, completa ambos campos para generar tu carta.';
+    return;
+  }
+
+  const letter = 
+    `Para: ${to}\n\n` +
+    `${message}\n\n` +
+    "Con todo mi amor,\n[Tu nombre aquí]";
+  output.textContent = letter;
+});
