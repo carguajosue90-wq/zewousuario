@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartas de Amor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cartas de Amor</h1>
+    <p>Expresa tus sentimientos de una manera especial</p>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Escribe tu carta</h2>
+      <form id="loveLetterForm">
+        <label for="to">Para:</label>
+        <input type="text" id="to" name="to" required placeholder="Nombre de tu persona especial">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="8" required placeholder="Escribe aquí tu carta..."></textarea>
+        <button type="submit">Generar Carta</button>
+      </form>
+    </section>
+    <section class="output-section">
+      <h2>Tu carta generada</h2>
+      <div id="letterOutput" class="letter-output"></div>
+    </section>
+    <section class="examples-section">
+      <h2>Ejemplos de frases de amor</h2>
+      <ul>
+        <li>“Eres mi sueño hecho realidad.”</li>
+        <li>“Desde que llegaste, mi mundo es más bonito.”</li>
+        <li>“Te amo no solo por cómo eres, sino por cómo soy contigo.”</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Hecho con ❤️ por y para enamorados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
